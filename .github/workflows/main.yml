@@ -1,5 +1,8 @@
 name: slack_webhook_basic
-on: workflow_dispatch
+on: 
+   push:
+    branches:
+      - main  # main 브랜치로 푸시할 때만
 
 jobs:
   build:
